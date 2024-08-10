@@ -83,7 +83,7 @@ const ProductsPage = () => {
   
   useEffect(() => {
     if(cart.length > 0) {
-    totalPriceRef.current.style.display="block";
+    totalPriceRef.current.style.display="table-row";
     } else {
       totalPriceRef.current.style.display="none";
     }
