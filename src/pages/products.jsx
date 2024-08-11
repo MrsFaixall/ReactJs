@@ -2,17 +2,29 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import CardProduct from "../Components/Fragment/CardProduct";
 import Button from "../Components/Elements/Button";
 import { getProducts } from "../services/product.service";
+import { getUsername } from "../services/auth.service";
 
 
-  const email = localStorage.getItem("email");
-  const ProductsPage = () => {
-  const [cart, setCart] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-  const [products, setProducts] = useState([]);
+  
+
+    const ProductsPage = () => {
+      const [cart, setCart] = useState([]);
+      const [totalPrice, setTotalPrice] = useState(0);
+      const [products, setProducts] = useState([]);
+      const [username, setUsername] = useState("");
 
 
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart")) || []);
+  }, []);
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    if(token){
+      setUsername(getUsername(token));
+    } else {
+      window.location.href = "/login";
+    }
   }, []);
 
   useEffect(()=>{
@@ -35,8 +47,7 @@ import { getProducts } from "../services/product.service";
 
 
   const handleLogout = () => {
-    localStorage.removeItem("email");
-    localStorage.removeItem("password");
+    localStorage.removeItem("token");
     window.location.href = "/login";
   };
 
@@ -67,7 +78,7 @@ import { getProducts } from "../services/product.service";
   return (
     <Fragment>
       <div className="flex justify-end h-10 bg-blue-600 text-white items-center px-10">
-        {email}
+        {username}
         <Button className="ml-5 bg-black" onClick={handleLogout}>
           Logout
         </Button>
