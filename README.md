@@ -9,15 +9,5 @@ Template ini menyediakan pengaturan minimal untuk menjalankan React di Vite deng
 
 ## Plugins Resmi
 
-Saat ini, dua plugin resmi tersedia:
 
-- **[@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md)**: Menggunakan [Babel](https://babeljs.io/) untuk Fast Refresh
-- **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)**: Menggunakan [SWC](https://swc.rs/) untuk Fast Refresh
-
-## Instalasi
-
-Untuk memulai proyek ini, gunakan perintah berikut:
-
-```bash
-npm install
 
