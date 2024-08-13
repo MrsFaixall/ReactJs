@@ -33,10 +33,4 @@ Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) (
    ```bash
    git clone https://github.com/username/repo-name.git
    cd repo-name
-## Instalasi
-
-1. **Clone repositori ini:**
-   ```bash
-   git clone https://github.com/username/repo-name.git
-   cd repo-name
 
