@@ -18,6 +18,21 @@ Proyek ini adalah aplikasi React yang menggunakan Vite sebagai bundler. Vite men
 
 Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) (versi 14 atau lebih baru).
 
+
+# Proyek React dengan Vite
+
+Proyek ini adalah aplikasi React yang menggunakan Vite sebagai bundler. Vite menawarkan waktu pengembangan yang cepat dengan hot module replacement (HMR) dan optimasi build yang efisien.
+
+## Prerequisites
+
+Sebelum memulai, pastikan Anda telah menginstal [Node.js](https://nodejs.org/) (versi 14 atau lebih baru).
+
+## Instalasi
+
+1. **Clone repositori ini:**
+   ```bash
+   git clone https://github.com/username/repo-name.git
+   cd repo-name
 ## Instalasi
 
 1. **Clone repositori ini:**
